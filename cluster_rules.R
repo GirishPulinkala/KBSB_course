@@ -51,4 +51,4 @@ cluster_rules<-function(training_df,recal,support=7,fontsize=7,show_colnames=FAL
 #EXAMPLE
 ros<-rosetta(autcon)
 recal<-recalculateRules(autcon,ros$main)
-cluster_rules(autcon,recal,support=30) #set colnames or rownmaes as FALSE if the graph is ugly
+cluster_rules(autcon,recal,support=20)
