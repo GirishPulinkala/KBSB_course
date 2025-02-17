@@ -37,6 +37,7 @@ cluster_rules<-function(training_df,recal,support=7,fontsize=7,show_colnames=FAL
   ann <- data.frame( eval(parse(text=paste("training_df$", decision_var, sep = ""))))
   colnames(ann) <- 'Decision'
   rownames(ann)<- rownames(dataM)
+  ann[] <- lapply( ann, factor)
   newdf<-dataM[rowSums(dataM[])>1,colSums(dataM[])>support]
   a <- filter(ann, rownames(ann) %in% rownames(newdf))
   annoCol <- list(category = unique(ann$Decision))
