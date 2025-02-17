@@ -49,6 +49,6 @@ cluster_rules<-function(training_df,recal,support=7,fontsize=7,show_colnames=FAL
 
 
 #EXAMPLE
-ros<-rosetta(autcon)
-recal<-recalculateRules(autcon,ros$main)
-cluster_rules(autcon,recal,support=20)
+#ros<-rosetta(autcon)
+#recal<-recalculateRules(autcon,ros$main)
+#cluster_rules(autcon,recal,support=20)
