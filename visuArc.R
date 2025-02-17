@@ -12,7 +12,8 @@ visuArc <- function(net, decision, feature=NULL){
   library(arcdiagram)
   
   #make df:  a data frame containing network connection in columns
-  df<- eval(parse(text=paste("net$", decision,'$nodes' ,sep = "")))
+ # df<- eval(parse(text=paste("net$", decision,'$nodes' ,sep = "")))
+  df<-net[[decision]][[nodes]]
   cols_select<- c('label','DiscState','NodeConnection')
   df<- subset(df,select = cols_select)
   rownames(df)  <-make.names(df[,'label'], unique = TRUE)
