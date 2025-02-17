@@ -1,7 +1,7 @@
 set.seed(0)
 #Load libraries
 library(VisuNet)
-if (!require(arcdiagram)) install.packages('arcdiagram')
+if (!require(arcdiagram)) devtools::install_github('gastonstat/arcdiagram')
 library(arcdiagram)
 
 
