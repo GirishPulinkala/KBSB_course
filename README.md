@@ -31,6 +31,7 @@ visuArc(net= vis,decision= 'autism',feature='ZSCAN18')
  * training_df - a dataframe used for training. e.g. 'autcon' dataset
  * recal - a dataframe consisting of recalulated rules
  * support - an integer specifying minimum support inorder to trim rules
+ * annotate_df - metadata of the objects
 
 Usage
 ```
