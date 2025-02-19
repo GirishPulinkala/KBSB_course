@@ -68,4 +68,4 @@ visuArc <- function(net, decision, feature=NULL){
 ##Program 
 #ros<-rosetta(autcon)
 #vis<-visunet(ros$main)
-#visuArc(vis,'autism',feature='ZSCAN18')
+visuArc(vis,'control',feature='PPOX')
